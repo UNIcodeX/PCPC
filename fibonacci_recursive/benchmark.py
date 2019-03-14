@@ -9,7 +9,7 @@ PLACES = 30
 
 def python_fib_rec():
   SETUP_CODE = '''
-from Python import fib_rec
+from _Python import fib_rec
   '''
 
   TEST_CODE = '''
@@ -29,7 +29,7 @@ x = fib_rec.fibRec({PLACES})'''.format(**globals())
 
 def nuitka_fib_rec():
   SETUP_CODE = '''
-from Nuitka import fib_rec
+from _Nuitka import fib_rec
 '''
 
   TEST_CODE = '''
@@ -49,7 +49,7 @@ x = fib_rec.fibRec({PLACES})'''.format(**globals())
 
 def nim_fib_rec():
   SETUP_CODE = '''
-from Nim import fib_rec
+from _Nim import fib_rec
   '''
 
   TEST_CODE = '''

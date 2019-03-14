@@ -6,7 +6,7 @@ PLACES = 100000
 
 def python_fib_iter():
   SETUP_CODE = '''
-from Python import fib_iter
+from _Python import fib_iter
   '''
 
   TEST_CODE = '''
@@ -26,7 +26,7 @@ x = fib_iter.fibIter({PLACES})'''.format(**globals())
 
 def nuitka_fib_iter():
   SETUP_CODE = '''
-from Nuitka import fib_iter
+from _Nuitka import fib_iter
 '''
 
   TEST_CODE = '''
@@ -46,7 +46,7 @@ x = fib_iter.fibIter({PLACES})'''.format(**globals())
 
 def nim_fib_iter():
   SETUP_CODE = '''
-from Nim import fib_iter
+from _Nim import fib_iter
   '''
 
   TEST_CODE = '''
