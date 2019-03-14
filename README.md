@@ -17,17 +17,43 @@ $ ./benchmark_all.sh
 
 Running benchmark 'fibonacci_iterative' to 100000 places.
 ---------------------------------------------------------
-Pure Python : 2.6756s
-Nuitka      : 2.6841s                                    1.00x
-Cython      : 0.0015s                                1,795.20x
-Nim         : 0.0008s                                3,294.82x
+Pure Python : 1.8041s
+Nuitka      : 1.8607s                                    0.97x
+Cython      : 0.0010s                                1,737.52x
+Numba       : 0.0009s                                2,111.11x
+Nim         : 0.0007s                                2,721.75x
 
 Running benchmark 'fibonacci_recursive' to 30 places.
 -----------------------------------------------------
-Pure Python : 3.5730s
-Nuitka      : 2.3132s                                    1.54x
-Cython      : 0.6638s                                    5.38x
-Nim         : 0.0372s                                   96.17x
+Pure Python : 2.6576s
+Nuitka      : 1.9326s                                    1.38x
+Cython      : 0.5002s                                    5.31x
+Numba       : 0.0748s                                   35.51x
+Nim         : 0.0278s                                   95.71x
+```
+
+Benchmarks were ran in a VM with the following specs.
+```
+               `.-/::/-``                
+            .-/osssssssso/.               j@A1
+           :osyysssssssyyys+-             OS: Antergos 
+        `.+yyyysssssssssyyyyy+.           Kernel: x86_64 Linux 5.0.0-arch1-1-ARCH
+       `/syyyyyssssssssssyyyyys-`         Uptime: 2d 16h 50m
+      `/yhyyyyysss++ssosyyyyhhy/`         Packages: 908
+     .ohhhyyyyso++/+oso+syy+shhhho.       Shell: zsh 5.7.1
+    .shhhhysoo++//+sss+++yyy+shhhhs.      Resolution: 1768x1492
+   -yhhhhs+++++++ossso+++yyys+ohhddy:     DE: Budgie
+  -yddhhyo+++++osyyss++++yyyyooyhdddy-    WM: BudgieWM
+ .yddddhso++osyyyyys+++++yyhhsoshddddy`   WM Theme: Numix-Frost-Light
+`odddddhyosyhyyyyyy++++++yhhhyosddddddo   GTK Theme: Adwaita-dark [GTK2/3]
+.dmdddddhhhhhhhyyyo+++++shhhhhohddddmmh.  Icon Theme: Numix-Square
+ddmmdddddhhhhhhhso++++++yhhhhhhdddddmmdy  Font: Fira Code 11
+dmmmdddddddhhhyso++++++shhhhhddddddmmmmh  CPU: Intel Core i7-6700 @ 2x 3.408GHz
+-dmmmdddddddhhyso++++oshhhhdddddddmmmmd-  GPU: vboxdrmfb
+ .smmmmddddddddhhhhhhhhhdddddddddmmmms.   RAM: 1115MiB / 3000MiB
+   `+ydmmmdddddddddddddddddddmmmmdy/.    
+      `.:+ooyyddddddddddddyyso+:.`       
+
 ```
 
 # Suggestions
