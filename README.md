@@ -4,27 +4,30 @@ The purpose of this repo is to compare different options for creating Python mod
 
 # TODOs
 - *Add more benchmarks*
-- *Add Cython and possibly numba.jit versions of benchmarks*
+- *Add numba.jit versions of benchmarks*
 
 # How Libraries Were Built
 - **Nuitka** -- `nuitka3 --lto --module /path/to/lib.py`
+- **Cython** -- `cythonize -a -i /path/to/lib.pyx`
 - **Nim** -- `nim c --app:lib -d:release --out:lib.[so|pyd] /path/to/lib.nim`
 
 # Current Benchmark Output
 ```console
-# ./benchmark_all.sh
+$ ./benchmark_all.sh 
 
 Running benchmark 'fibonacci_iterative' to 100000 places.
 ---------------------------------------------------------
-Pure Python : 1.7613s
-Nuitka      : 1.8141s                                    0.97x
-Nim         : 0.0007s                                2,619.10x
+Pure Python : 2.6756s
+Nuitka      : 2.6841s                                    1.00x
+Cython      : 0.0015s                                1,795.20x
+Nim         : 0.0008s                                3,294.82x
 
 Running benchmark 'fibonacci_recursive' to 30 places.
 -----------------------------------------------------
-Pure Python : 2.4137s
-Nuitka      : 1.6588s                                    1.46x
-Nim         : 0.0275s                                   87.93x
+Pure Python : 3.5730s
+Nuitka      : 2.3132s                                    1.54x
+Cython      : 0.6638s                                    5.38x
+Nim         : 0.0372s                                   96.17x
 ```
 
 # Suggestions
