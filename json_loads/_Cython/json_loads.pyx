@@ -1,6 +1,6 @@
-import json, nimpy, tables
+import json
 
-const JSON = """
+JSON = """
 [
   {
     "userId": 1,
@@ -1205,16 +1205,6 @@ const JSON = """
 ]
 """
 
-proc loadIt*(s: string = JSON): seq[Table[string, string]] {.inline, exportpy.} =
-  var t = initTable[string, string]()
-  for i in parseJson(JSON):
-    for key, val in i:
-      t[key] = $val
-    result.add t
 
-when not defined(release):
-  when isMainModule:
-    echo("test loadIt()")
-    for i in loadIt(JSON):
-      echo(i)
-      break
+def loadIt(s=JSON):
+    return json.loads(s)

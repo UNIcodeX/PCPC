@@ -28,11 +28,11 @@ x = json_loads.loadIt()'''.format(**globals())
 
 if __name__ == "__main__":
   print("\nRunning benchmark 'json_loads'.".format(**globals()))
-  print("---------------------------------")
+  print("-------------------------------")
 
   dictTimes = dict()
 
-  for benchName in ['Python', 'Nuitka', 'Numba', 'Nim']:
+  for benchName in ['Python', 'Nuitka', 'Cython', 'Numba', 'Nim']:
     dirName = '_'+benchName
     path    = os.getcwd()+os.path.sep+dirName
     if os.path.exists(os.path.abspath(path)):
