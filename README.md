@@ -53,26 +53,13 @@ Nim    : 1.6071s                                    1.48x
 
 Benchmarks were ran in a VM with the following specs.
 ```
-               `.-/::/-``                
-            .-/osssssssso/.               j@A1
-           :osyysssssssyyys+-             OS: Antergos 
-        `.+yyyysssssssssyyyyy+.           Kernel: x86_64 Linux 5.0.0-arch1-1-ARCH
-       `/syyyyyssssssssssyyyyys-`         Uptime: 2d 16h 50m
-      `/yhyyyyysss++ssosyyyyhhy/`         Packages: 908
-     .ohhhyyyyso++/+oso+syy+shhhho.       Shell: zsh 5.7.1
-    .shhhhysoo++//+sss+++yyy+shhhhs.      Resolution: 1768x1492
-   -yhhhhs+++++++ossso+++yyys+ohhddy:     DE: Budgie
-  -yddhhyo+++++osyyss++++yyyyooyhdddy-    WM: BudgieWM
- .yddddhso++osyyyyys+++++yyhhsoshddddy`   WM Theme: Numix-Frost-Light
-`odddddhyosyhyyyyyy++++++yhhhyosddddddo   GTK Theme: Adwaita-dark [GTK2/3]
-.dmdddddhhhhhhhyyyo+++++shhhhhohddddmmh.  Icon Theme: Numix-Square
-ddmmdddddhhhhhhhso++++++yhhhhhhdddddmmdy  Font: Fira Code 11
-dmmmdddddddhhhyso++++++shhhhhddddddmmmmh  CPU: Intel Core i7-6700 @ 2x 3.408GHz
--dmmmdddddddhhyso++++oshhhhdddddddmmmmd-  GPU: vboxdrmfb
- .smmmmddddddddhhhhhhhhhdddddddddmmmms.   RAM: 1115MiB / 3000MiB
-   `+ydmmmdddddddddddddddddddmmmmdy/.    
-      `.:+ooyyddddddddddddyyso+:.`       
-
+ OS: Antergos 
+ Kernel: x86_64 Linux 
+ Packages: 908
+ Shell: zsh 5.7.1
+ CPU: Intel Core i7-6700 
+ GPU: vboxdrmfb
+ RAM: 1115MiB / 3000MiB
 ```
 
 # Suggestions
