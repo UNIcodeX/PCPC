@@ -32,6 +32,10 @@ Numba  : 0.0728s                                   32.42x
 Nim    : 0.0274s                                   86.06x
 
 Running benchmark 'json_loads'.
+_NOTE:_ JSON parsing within Nim is quite fast. There is
+extra overhead here from returning a seq of Tables and
+converting each value to a string. There is probably also
+more efficient way to do this. Suggestions welcome.
 ---------------------------------------------------------
 Python : 0.8010s                                    1.00x
 Nuitka : 0.7802s                                    1.03x
