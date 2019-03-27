@@ -1,7 +1,8 @@
 #!/bin/bash
-for dir in $(ls -d ./*/)
+for dir in `ls -d1 "$PWD/"*/`
 do
-  python $dir"/benchmark.py"
+  cd $dir
+  python benchmark.py
 done
 
 echo """

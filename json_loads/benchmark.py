@@ -28,7 +28,7 @@ x = json_loads.loadIt()'''.format(**globals())
 
 if __name__ == "__main__":
   print("\nRunning benchmark 'json_loads'.".format(**globals()))
-  print("-------------------------------")
+  print("---------------------------------------------------------")
 
   dictTimes = dict()
 

@@ -28,7 +28,7 @@ x = gen_range.myRange(1, 10000)'''.format(**globals())
 
 if __name__ == "__main__":
   print("\nRunning benchmark 'gen_range'.".format(**globals()))
-  print("--------------------------------")
+  print("---------------------------------------------------------")
 
   dictTimes = dict()
 

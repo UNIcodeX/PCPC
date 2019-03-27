@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # importing the required modules
 import timeit
 import os
@@ -30,7 +31,7 @@ x = fib_rec.fibRec({PLACES})'''.format(**globals())
 
 if __name__ == "__main__":
   print("\nRunning benchmark 'fibonacci_iterative' to {PLACES} places.".format(**globals()))
-  print("---------------------------------------------------"+('-'*len(str(PLACES))))
+  print("-------------------------------------------------------"+('-'*len(str(PLACES))))
 
   dictTimes = dict()
 
