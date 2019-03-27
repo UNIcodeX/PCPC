@@ -4,7 +4,6 @@ The purpose of this repo is to compare different options for creating Python mod
 
 # TODOs
 - *Add more benchmarks*
-- *Add numba.jit versions of benchmarks*
 
 # How Libraries Were Built
 - **Nuitka** -- `nuitka3 --lto --module /path/to/lib.py`
