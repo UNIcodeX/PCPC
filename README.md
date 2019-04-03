@@ -8,7 +8,7 @@ The purpose of this repo is to compare different options for creating Python mod
 # How Libraries Were Built
 - **Nuitka** -- `nuitka3 --lto --module /path/to/lib.py`
 - **Cython** -- `cythonize -a -i /path/to/lib.pyx`
-- **Nim** -- `nim c --app:lib -d:release --out:lib.[so|pyd] /path/to/lib.nim`
+- **Nim** -- `nim c --app:lib -d:release --gc:markAndSweep --out:lib.[so|pyd] /path/to/lib.nim`
 
 # Current Benchmark Output
 ```console
