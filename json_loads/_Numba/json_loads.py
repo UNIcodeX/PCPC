@@ -1209,7 +1209,5 @@ JSON = """
 
 @jit
 def loadIt(s=JSON):
-    return json.loads(s)
-    # for item in j:
-    #     for key in item:
-    #         print(key, item[key])
+  for i in json.loads(s):
+    yield i

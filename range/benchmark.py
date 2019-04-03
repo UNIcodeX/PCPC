@@ -19,7 +19,7 @@ x = gen_range.myRange(1, 10000)'''.format(**globals())
     setup=SETUP_CODE,
     stmt=TEST_CODE,
     repeat=5,
-    number=5000
+    number=1000
     )
 
   # printing minimum exec. time

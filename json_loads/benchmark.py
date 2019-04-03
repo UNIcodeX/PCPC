@@ -12,14 +12,14 @@ from {dir} import json_loads
   '''.format(**locals())
 
   TEST_CODE = '''
-x = json_loads.loadIt()'''.format(**globals())
+x = [d for d in json_loads.loadIt()]'''.format(**globals())
 
   # timeit.repeat statement
   times = timeit.repeat(
     setup=SETUP_CODE,
     stmt=TEST_CODE,
     repeat=5,
-    number=5000
+    number=1000
     )
 
   # printing minimum exec. time

@@ -22,7 +22,7 @@ x = fib_rec.fibRec({PLACES})'''.format(**globals())
     setup=SETUP_CODE,
     stmt=TEST_CODE,
     repeat=3,
-    number=20
+    number=10
     )
 
   # printing minimum exec. time

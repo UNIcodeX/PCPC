@@ -1205,13 +1205,13 @@ const JSON = """
 ]
 """
 
-proc loadIt*(s: string = JSON): seq[Table[string, string]] {.inline, exportpy.} =
+iterator loadIt(s: string = JSON): Table[string, string] {.exportpy.} =
   var t = initTable[string, string]()
-  for i in parseJson(JSON):
+  for i in parseJson(s):
     for key, val in i:
       t[key] = $val
-    result.add t
-
+    yield t
+      
 when not defined(release):
   when isMainModule:
     echo("test loadIt()")

@@ -1207,4 +1207,5 @@ JSON = """
 
 
 def loadIt(s=JSON):
-    return json.loads(s)
+  for i in json.loads(s):
+    yield i
