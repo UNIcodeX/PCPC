@@ -30,7 +30,7 @@ x = fib_rec.fibRec({PLACES})'''.format(**globals())
 
 
 if __name__ == "__main__":
-  print("\nRunning benchmark 'fibonacci_iterative' to {PLACES} places.".format(**globals()))
+  print("\nRunning benchmark 'fibonacci_recursive' to {PLACES} places.".format(**globals()))
   print("-------------------------------------------------------"+('-'*len(str(PLACES))))
 
   dictTimes = dict()
