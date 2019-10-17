@@ -9,6 +9,7 @@ The purpose of this repo is to compare different options for creating Python mod
 - **Nuitka** -- `nuitka3 --lto --module /path/to/lib.py`
 - **Cython** -- `cythonize -a -i /path/to/lib.pyx`
 - **Nim** -- `nim c --app:lib -d:release --gc:markAndSweep --out:lib.[so|pyd] /path/to/lib.nim`
+- **V** -- `v -shared -prod /path/to/lib.v`
 
 # Current Benchmark Output
 ```console
@@ -16,19 +17,21 @@ $ ./benchmark_all.sh
 
 Running benchmark 'fibonacci_iterative' to 100000 places.
 ---------------------------------------------------------
-Python : 0.8965s                                    1.00x
-Nuitka : 0.9262s                                    0.97x
-Cython : 0.0005s                                1,739.70x
-Numba  : 0.0004s                                2,287.39x
-Nim    : 0.0003s                                2,903.84x
+Python : 1.1194s                                    1.00x
+Nuitka : 1.1471s                                    0.98x
+Cython : 0.0007s                                1,559.35x
+Numba  : 0.0004s                                2,980.38x
+Nim    : 0.0007s                                1,499.98x
+V      : 0.0029s                                  383.67x
 
 Running benchmark 'fibonacci_recursive' to 30 places.
 ---------------------------------------------------------
-Python : 1.2584s                                    1.00x
-Nuitka : 0.8297s                                    1.52x
-Cython : 0.2503s                                    5.03x
-Numba  : 0.0373s                                   33.75x
-Nim    : 0.0137s                                   92.06x
+Python : 1.6359s                                    1.00x
+Nuitka : 1.0064s                                    1.63x
+Cython : 0.3227s                                    5.07x
+Numba  : 0.0582s                                   28.13x
+Nim    : 0.0182s                                   89.79x
+V      : 0.0585s                                   27.97x
 
 Running benchmark 'json_loads'.
 _NOTE:_ JSON parsing within Nim is quite fast. I believe
