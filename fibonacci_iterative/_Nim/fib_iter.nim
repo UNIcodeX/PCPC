@@ -1,12 +1,10 @@
 import nimpy
 
-proc fibIter*(n: int64): int64 {.exportpy.} =
+proc fibIter*(n: uint64): uint64 {.exportpy.} =
   var
-    n = n
-    a = 0
-    b = 1
-  while n > 0:
+    a = 0'u64
+    b = 1'u64
+  for i in 0 ..< n:
     swap a, b
     a += b
-    n -= 1
   result = a

@@ -1,6 +1,6 @@
-from numba import jit, int32, int64
+from numba import jit, int64
 
-@jit(int32(int32,))
+@jit(int64(int64,))
 def fibRec(n):
     if n <= 2:
         return 1

@@ -2,6 +2,8 @@ from numba import jit
 import json
 
 
+
+
 JSON = """
 [
   {
@@ -1207,7 +1209,7 @@ JSON = """
 ]
 """
 
-@jit
+@jit(forceobj=True)
 def loadIt(s=JSON):
   for i in json.loads(s):
     yield i

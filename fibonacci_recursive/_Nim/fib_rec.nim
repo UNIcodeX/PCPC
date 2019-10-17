@@ -1,6 +1,6 @@
 import nimpy
 
-proc fibRec(n: int): int64 {.exportpy.} =
+proc fibRec(n: uint64): uint64 {.exportpy.} =
   if n <= 2:
     result = 1
   else:

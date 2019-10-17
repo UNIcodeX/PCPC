@@ -1,6 +1,6 @@
-from numba import jit, int32, int64
+from numba import jit, int64
 
-@jit(int64(int32))
+@jit(int64(int64))
 def fibIter(n):
     a, b = 0, 1
     while n > 0:
