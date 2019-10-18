@@ -2,6 +2,15 @@
 
 The purpose of this repo is to compare different options for creating Python modules and their efficiency, relative to each-other.
 
+![](https://img.shields.io/github/languages/top/UNIcodeX/PCPC?style=for-the-badge)
+![](https://img.shields.io/github/languages/count/UNIcodeX/PCPC?logoColor=green&style=for-the-badge)
+![](https://img.shields.io/github/stars/UNIcodeX/PCPC?style=for-the-badge "Star PCPC on GitHub!")
+![](https://img.shields.io/maintenance/yes/2019?style=for-the-badge "2019")
+![](https://img.shields.io/github/languages/code-size/UNIcodeX/PCPC?style=for-the-badge)
+![](https://img.shields.io/github/issues-raw/UNIcodeX/PCPC?style=for-the-badge "Bugs")
+![](https://img.shields.io/github/issues-pr-raw/UNIcodeX/PCPC?style=for-the-badge "PRs")
+![](https://img.shields.io/github/last-commit/UNIcodeX/PCPC?style=for-the-badge "Commits")
+
 # TODOs
 - *Add more benchmarks*
 
