@@ -1205,6 +1205,10 @@ const JSON = """
 ]
 """
 
+# proc loadIt*(buffer: string): JsonNode {.exportpy.} =
+#   ## Mimics Pythons ``json.loads()`` to load JSON.
+#   parseJson(buffer)
+
 iterator loadIt(s: string = JSON): Table[string, string] {.exportpy.} =
   var t = initTable[string, string]()
   for i in parseJson(s):
@@ -1217,4 +1221,3 @@ when not defined(release):
     echo("test loadIt()")
     for i in loadIt(JSON):
       echo(i)
-      break

@@ -24,6 +24,13 @@ The purpose of this repo is to compare different options for creating Python mod
 ```console
 $ ./benchmark_all.sh 
 
+Running benchmark 'base64'
+---------------------------------------------------------
+Python : 0.1405s                                    1.00x
+Nuitka : 0.1410s                                    1.00x
+Cython : 0.1441s                                    0.97x
+Nim    : 0.0845s                                    1.66x
+
 Running benchmark 'fibonacci_iterative' to 100000 places.
 ---------------------------------------------------------
 Python : 1.1194s                                    1.00x
